@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    image: steveltn/https-portal:1
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./html:/var/www/vhosts:ro
+      - ./ssl_certs:/var/lib/https-portal
+    environment:
+      DOMAINS: 'yourdomain.com, www.yourdomain.com => https://softwareateliersystems.de'
+      STAGE: 'production'
