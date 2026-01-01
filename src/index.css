@@ -1,0 +1,236 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "@fontsource/ibm-plex-sans/400.css";
+@import "@fontsource/ibm-plex-sans/500.css";
+@import "@fontsource/ibm-plex-sans/600.css";
+@import "@fontsource/ibm-plex-sans/700.css";
+
+/* SoftwareAtelier Design System - Dark Technical Theme */
+
+@layer base {
+  :root {
+    
+    /* Light theme - Clean, professional, technical */
+    --background: 210 20% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Primary: Teal/Cyan for technology & trust */
+    --primary: 184 72% 32%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 184 72% 40%;
+
+    /* Secondary: Light slate surface */
+    --secondary: 210 20% 94%;
+    --secondary-foreground: 222 47% 20%;
+
+    /* Muted: Subtle grays */
+    --muted: 210 15% 92%;
+    --muted-foreground: 215 16% 44%;
+
+    /* Accent: Warmer teal */
+    --accent: 189 80% 30%; 
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 22% 88%;
+    --input: 214 20% 90%;
+    --ring: 184 72% 32%;
+
+    --radius: 0.5rem;
+
+    /* Custom gradients - Light mode */
+    --gradient-hero: linear-gradient(135deg, hsl(210 20% 98%) 0%, hsl(210 25% 95%) 50%, hsl(210 20% 96%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 20% 98%) 100%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(var(--primary) / 0.08) 0%, transparent 70%);
+
+    /* Shadows - Light mode */
+    --shadow-sm: 0 2px 8px hsl(222 47% 10% / 0.08);
+    --shadow-md: 0 4px 20px hsl(222 47% 10% / 0.1);
+    --shadow-lg: 0 10px 40px hsl(222 47% 10% / 0.12);
+    --shadow-glow: 0 0 30px hsl(180 70% 45% / 0.15);
+    --shadow-glow-sm: 0 0 15px hsl(180 70% 45% / 0.12);
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 180 70% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 20% 94%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 20% 88%;
+    --sidebar-ring: 180 70% 35%;
+  }
+
+  .dark {
+    /* Dark theme - German engineering aesthetic */
+    --background: 222 47% 6%;
+    --foreground: 210 20% 95%;
+
+    --card: 222 47% 8%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 20% 95%;
+
+    /* Primary: Teal/Cyan for technology & trust */
+    --primary: 184 72% 46%;  
+    --primary-foreground: 222 47% 6%;
+    --primary-glow: 184 72% 56%;
+
+    /* Secondary: Slate surface */
+    --secondary: 220 30% 12%;
+    --secondary-foreground: 210 20% 85%;
+
+    /* Muted: Subtle grays */
+    --muted: 220 25% 15%;
+    --muted-foreground: 215 15% 55%;
+
+    /* Accent: Warmer teal */
+    --accent: 189 80% 42%;  
+    --accent-foreground: 210 20% 95%;
+
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 210 20% 95%;
+
+    --border: 220 25% 18%;
+    --input: 220 25% 15%;
+    --ring: 184 72% 46%;
+
+    /* Custom gradients - Dark mode */
+    --gradient-hero: linear-gradient(135deg, hsl(222 47% 6%) 0%, hsl(222 47% 10%) 50%, hsl(220 40% 8%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(222 47% 10%) 0%, hsl(222 47% 7%) 100%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(var(--primary) / 0.15) 0%, transparent 70%);
+
+    /* Shadows - Dark mode */
+    --shadow-sm: 0 2px 8px hsl(222 47% 3% / 0.4);
+    --shadow-md: 0 4px 20px hsl(222 47% 3% / 0.5);
+    --shadow-lg: 0 10px 40px hsl(222 47% 3% / 0.6);
+    --shadow-glow: 0 0 30px hsl(180 70% 45% / 0.25);
+    --shadow-glow-sm: 0 0 15px hsl(180 70% 45% / 0.2);
+
+    /* Sidebar */
+    --sidebar-background: 222 47% 8%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 180 70% 45%;
+    --sidebar-primary-foreground: 222 47% 6%;
+    --sidebar-accent: 220 25% 15%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 220 25% 18%;
+    --sidebar-ring: 180 70% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    overflow-x: hidden;
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    background-image: var(--gradient-hero);
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .bg-gradient-hero {
+    background-image: var(--gradient-hero);
+  }
+
+  .bg-gradient-card {
+    background-image: var(--gradient-card);
+  }
+
+  .bg-gradient-glow {
+    background-image: var(--gradient-glow);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-glow-sm {
+    box-shadow: var(--shadow-glow-sm);
+  }
+
+  .border-gradient {
+    border: 1px solid transparent;
+    background: linear-gradient(var(--gradient-card)) padding-box,
+                linear-gradient(135deg, hsl(var(--primary) / 0.30), hsl(var(--border))) border-box;
+  }
+
+  /* Grid pattern background */
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(hsl(220 25% 18% / 0.3) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(220 25% 18% / 0.3) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  /* Subtle noise texture */
+  .noise-overlay {
+    position: relative;
+  }
+  
+  .noise-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    opacity: 0.02;
+    pointer-events: none;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(222 47% 8%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(220 25% 25%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid hsl(180 70% 45%);
+  outline-offset: 2px;
+}
