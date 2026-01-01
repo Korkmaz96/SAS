@@ -13,7 +13,7 @@ export default function Imprint() {
 
         <div className="mt-8 space-y-10">
           <section className="space-y-2">
-            <h2 className="text-xl font-semibold">Angaben gemäß DDG</h2>
+            <h2 className="text-xl font-semibold">Angaben gemäß §5 DDG</h2>
             <p className="leading-relaxed">
               Mikail Korkmaz (Einzelunternehmer)
               <br />
