@@ -97,8 +97,22 @@ export default function Privacy() {
                 Fall von Anschlussfragen verarbeitet.
               </p>
               <p className="leading-relaxed">
-                Rechtsgrundlage ist Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO (Anbahnung/Erfüllung eines
-                Vertragsverhältnisses) oder Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO (allgemeine Anfragen).
+                Für die technische Abwicklung und Übermittlung von Kontaktformularanfragen nutzen wir Web3Forms 
+                (Web3Forms ist ein Produkt des Unternehmens Web3Creative,(Web3Forms / Web3Creative - Anbieterangaben siehe Datenschutzhinweise des Dienstes)).
+                Die von Ihnen im Formular eingegebenen Daten werden hierfür an Web3Forms übermittelt und zur Zustellung Ihrer Nachricht an uns verarbeitet.
+              </p>
+              <p className="leading-relaxed">
+                Zum Schutz vor Spam und Missbrauch verwenden wir außerdem hCaptcha (Anbieter: Intuition Machines, Inc., USA).
+              </p>    
+              <p className="leading-relaxed">
+                Rechtsgrundlage für den Einsatz von hCaptcha ist Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO
+                (Schutz vor Missbrauch/Spam-Prävention) bzw. - falls erforderlich - Ihre Einwilligung nach
+                Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;a DSGVO.
+              </p> 
+              <p className="leading-relaxed">
+                Rechtsgrundlage für die Verarbeitung Ihrer Anfrage ist Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO
+                (Anbahnung/Erfüllung eines Vertragsverhältnisses) oder Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO
+                (allgemeine Anfragen).
               </p>
 
               {/* Modul: Spam-Schutz (nur aktivieren, wenn du wirklich einen nutzt) */}
@@ -154,6 +168,8 @@ export default function Privacy() {
                 <li>Hosting/Website-Auslieferung: GitHub Pages (GitHub, Inc., USA)</li>
                 <li>DNS/Reverse Proxy/CDN (je nach Konfiguration): Cloudflare (Cloudflare, Inc., USA)</li>
                 <li>E-Mail-Weiterleitung/Empfang: Cloudflare Email Routing und Ihr E-Mail-Postfach bei Google (Gmail), USA</li>
+                <li>Kontaktformular-Abwicklung/Übermittlung: Web3Forms (Web3Forms ist ein Produkt der Web3Creative, Kerala, Indien)</li>
+                <li>Spam-Schutz (hCaptcha): hCaptcha (Intuition Machines, Inc., USA)</li>
             </ul>
             </section>
 
