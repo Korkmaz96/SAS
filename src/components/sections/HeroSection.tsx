@@ -103,13 +103,19 @@ export function HeroSection() {
         transition={{ duration: 0.6, delay: 0.7 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
       >
-        <a
-          href="#problems"
-          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-        >
-          <span className="text-xs uppercase tracking-wider">Erfahre Mehr</span>
-          <ChevronDown className="w-5 h-5 animate-bounce" />
-        </a>
+        <button
+        type="button"
+        onClick={() => {
+          document.getElementById("problems")?.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }}
+        className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+      >
+        <span className="text-xs uppercase tracking-wider">Erfahre Mehr</span>
+        <ChevronDown className="w-5 h-5 animate-bounce" />
+      </button>
       </motion.div>
     </section>
   );
