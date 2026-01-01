@@ -4,7 +4,7 @@ import { Mail, MapPin, Phone, ArrowUpRight } from "lucide-react";
 
 const footerLinks = {
   services: [
-    { name: "Webentwicklung", href: "/services/web-design" },
+    { name: "Webentwicklung", href: "/services/web-engineering" },
     { name: "Software Lösungen", href: "/services/software-solutions" },
     { name: "Wartung & Support", href: "/services/maintenance" },
   ],
@@ -19,6 +19,10 @@ const footerLinks = {
     { name: "Preise", href: "/pricing" },
     { name: "FAQ", href: "/faq" },
     { name: "Kontakt", href: "/contact" },
+  ],
+  legal:[
+    { name: "Datenschutz", href: "/privacy"},
+    { name: "Impressum", href: "/imprint"},
   ],
 };
 
@@ -207,13 +211,17 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
             <p>© {new Date().getFullYear()} SoftwareAtelier. Alle Rechte vorbehalten.</p>
             <div className="flex items-center gap-6">
-              <Link to="/privacy" onClick={handleNavClick("/privacy")} className="hover:text-primary transition-colors">
-                Datenschutz
+            {footerLinks.legal.map((l) => (
+              <Link
+                key={l.name}
+                to={l.href}
+                onClick={handleNavClick(l.href)}
+                className="hover:text-primary transition-colors"
+              >
+                {l.name}
               </Link>
-              <Link to="/imprint" onClick={handleNavClick("/imprint")} className="hover:text-primary transition-colors">
-                Impressum
-              </Link>
-            </div>
+            ))}
+          </div>
           </div>
         </div>
       </div>

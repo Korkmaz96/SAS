@@ -17,6 +17,8 @@ import PricingPage from "./pages/Pricing";
 import AboutPage from "./pages/About";
 import FAQPage from "./pages/FAQ";
 import ContactPage from "./pages/Contact";
+import Privacy from "./pages/Privacy";
+import Imprint from "./pages/Imprint";
 
 
 const queryClient = new QueryClient();
@@ -32,7 +34,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/services" element={<ServicesPage />} />
-            <Route path="/services/web-design" element={<WebDesignPage />} />
+            <Route path="/services/web-engineering" element={<WebDesignPage />} />
             <Route path="/services/software-solutions" element={<SoftwareSolutionsPage />} />
             <Route path="/services/maintenance" element={<MaintenancePage />} />
             <Route path="/industries" element={<IndustriesPage />} />
@@ -42,6 +44,8 @@ const App = () => (
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/imprint" element={<Imprint />} />
           </Routes>
         </HashRouter>
       </TooltipProvider>

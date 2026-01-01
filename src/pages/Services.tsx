@@ -9,7 +9,7 @@ const services = [
     icon: Globe,
     title: "Webentwicklung & Webanwendungen",
     description: "Von der kompakten Webseite bis zur individuellen Webanwendung. Ob WordPress, Custom Code oder ein schlanker Builder: Wir wählen die passende Technologie für Anforderungen, Budget und langfristigen Betrieb.",
-    href: "/services/web-design",
+    href: "/services/web-engineering", //web-engineering
     features: [
       "Mobil optimiert für alle Endgeräte",
       "Technisches SEO",

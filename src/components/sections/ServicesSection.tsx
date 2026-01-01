@@ -10,7 +10,7 @@ const services = [
     description:
       "WordPress, individuelles HTML/CSS/JS oder ein schlanker Builder - passend zu Budget und Anforderungen. Schnell, mobil-optimiert, SEO-ready.",
     features: ["Mobil optimiert", "Suchmaschinenoptimiert", "DSGVO Konforme Umsetzung", "Deployment & Hosting auf Wunsch"],
-    href: "/services/web-design",
+    href: "/services/web-engineering", 
   },
   {
     icon: Cog,
