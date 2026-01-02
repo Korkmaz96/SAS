@@ -168,6 +168,7 @@ export default function ContactPage() {
                 </div>
                 <HCaptcha
                   sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
+                  languageOverride="de"
                   reCaptchaCompat={false}
                   onVerify={(token) => setHCaptchaToken(token)}
                   onExpire={() => setHCaptchaToken("")}
