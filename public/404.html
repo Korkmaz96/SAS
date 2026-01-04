@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting…</title>
+    <script>
+      (function () {
+        // GitHub Pages SPA fallback:
+        // Preserve the requested path and redirect to /?p=<path>&q=<query>
+        var l = window.location;
+        var path = l.pathname;
+        var search = l.search ? l.search.slice(1) : "";
+        var hash = l.hash ? l.hash.slice(1) : "";
+
+        // Encode the original path; keep query/hash separately to restore cleanly.
+        var redirectUrl =
+          l.origin +
+          "/?p=" +
+          encodeURIComponent(path) +
+          (search ? "&q=" + encodeURIComponent(search) : "") +
+          (hash ? "&h=" + encodeURIComponent(hash) : "");
+
+        l.replace(redirectUrl);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
