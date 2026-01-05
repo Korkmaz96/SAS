@@ -1,8 +1,10 @@
+import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Globe, Cog, Wrench, Check } from "lucide-react";
+
 
 const services = [
   {
@@ -52,6 +54,11 @@ const services = [
 export default function ServicesPage() {
   return (
     <Layout>
+      <SEO
+        title="Leistungen | Software Atelier Systems"
+        description="Leistungen im Überblick: Webentwicklung, individuelle Softwarelösungen und Wartung - für skalierbare, performante B2B-Systeme."
+        path="/services"
+      />
       {/* Hero */}
       <section className="py-20 lg:py-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

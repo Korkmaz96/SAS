@@ -1,9 +1,11 @@
+import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Plus, Minus } from "lucide-react";
 import { useState } from "react";
+
 
 const faqs = [
   { q: "Wie lange dauert ein typisches Projekt?", a: "Webseiten: meist 4-8 Wochen. Individuelle Software: häufig 8-16 Wochen, je nach Umfang und Integrationen. Du bekommst zu Beginn eine realistische Timeline mit Meilensteinen." },
@@ -22,6 +24,11 @@ export default function FAQPage() {
   const [open, setOpen] = useState<number | null>(0);
   return (
     <Layout>
+      <SEO
+        title="FAQ | Software Atelier Systems"
+        description="Häufige Fragen zu Ablauf, Technik, SEO, Wartung und Zusammenarbeit - kurz und verständlich beantwortet."
+        path="/faq"
+      />
       <section className="py-20 lg:py-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl mx-auto text-center mb-16">

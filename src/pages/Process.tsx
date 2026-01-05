@@ -1,8 +1,10 @@
+import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, MessageSquare, Lightbulb, Code, Rocket, HeadphonesIcon } from "lucide-react";
+
 
 const steps = [
   {
@@ -24,7 +26,7 @@ const steps = [
     icon: Lightbulb,
     number: "02",
     title: "Angebot & Planung",
-    duration: "2–7 Tage",
+    duration: "2-7 Tage",
     description:
       "Auf Basis unseres Gesprächs erstelle ich ein strukturiertes Angebot mit Leistungsumfang, Zeitplan und transparenter Preisstruktur. Du weißt vorab genau, was geliefert wird.",
     details: [
@@ -85,6 +87,11 @@ const steps = [
 export default function ProcessPage() {
   return (
     <Layout>
+      <SEO
+        title="Ablauf | Software Atelier Systems"
+        description="So läuft dein Projekt ab: von Analyse und Konzept über Umsetzung bis Go-Live. Transparent, effizient und mit klaren Meilensteinen."
+        path="/process"
+      />
       {/* Hero */}
       <section className="py-20 lg:py-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,3 +1,4 @@
+import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -80,6 +81,11 @@ const packages = [
 export default function MaintenancePage() {
   return (
     <Layout>
+      <SEO
+        title="Wartung & Pflege | Software Atelier Systems"
+        description="Wartung, Updates und Weiterentwicklung für Webseiten und Web-Apps: stabiler Betrieb, schnelle Fixes und kontinuierliche Optimierung."
+        path="/services/maintenance"
+      />
       {/* Hero */}
       <section className="py-20 lg:py-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

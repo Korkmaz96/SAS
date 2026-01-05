@@ -1,8 +1,10 @@
+import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Check, HelpCircle } from "lucide-react";
+
 
 const packages = [
   {
@@ -84,6 +86,11 @@ const faqItems = [
 export default function PricingPage() {
   return (
     <Layout>
+      <SEO
+        title="Preise | Software Atelier Systems"
+        description="Transparente Preise für Webentwicklung, Softwarelösungen und Wartung. Pakete und Leistungen im Überblick – passend zu deinem Bedarf."
+        path="/pricing"
+      />
       {/* Hero */}
       <section className="py-20 lg:py-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

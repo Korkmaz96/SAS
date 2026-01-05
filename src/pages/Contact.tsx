@@ -1,3 +1,4 @@
+import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -67,6 +68,11 @@ export default function ContactPage() {
 
   return (
     <Layout>
+      <SEO
+        title="Kontakt | Software Atelier Systems"
+        description="Kontakt zu Software Atelier Systems: Anfrage senden, Projekte besprechen und Rückmeldung erhalten. Kontaktformular mit Spam-Schutz (hCaptcha)."
+        path="/contact"
+      />
       <section className="py-20 lg:py-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16">

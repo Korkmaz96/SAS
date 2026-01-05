@@ -1,8 +1,10 @@
+import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Building2, HardHat, Cog } from "lucide-react";
+
 
 const industries = [
   {
@@ -76,6 +78,11 @@ const industries = [
 export default function IndustriesPage() {
   return (
     <Layout>
+      <SEO
+        title="Branchen | Software Atelier Systems"
+        description="Branchenfokus: Handwerk und Facility Management - plus individuelle B2B-Lösungen. Klare Strukturen, performante Umsetzung und langfristige Wartbarkeit."
+        path="/industries"
+      />
       {/* Hero */}
       <section className="py-20 lg:py-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,3 +1,4 @@
+import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -51,6 +52,11 @@ const useCases = [
 export default function SoftwareSolutionsPage() {
   return (
     <Layout>
+      <SEO
+        title="Softwareentwicklung | Software Atelier Systems"
+        description="Individuelle Softwarelösungen für B2B: Automatisierung, Datenverarbeitung und skalierbare Anwendungen - passgenau für deine Prozesse."
+        path="/services/software-solutions"
+      />
       {/* Hero */}
       <section className="py-20 lg:py-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

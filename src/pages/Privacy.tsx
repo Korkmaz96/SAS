@@ -1,5 +1,7 @@
+import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/layout/Layout";
 import { useEffect } from "react";
+
 
 export default function Privacy() {
   useEffect(() => {
@@ -8,6 +10,11 @@ export default function Privacy() {
 
   return (
     <Layout>
+      <SEO
+        title="Datenschutzerklärung | Software Atelier Systems"
+        description="Datenschutzerklärung von Software Atelier Systems: Informationen zur Verarbeitung personenbezogener Daten, Kontaktformular (Web3Forms), hCaptcha, Hosting und Datenübermittlung."
+        path="/privacy"
+      />
       <div className="container mx-auto px-4 py-12">
         <h1 className="text-3xl font-semibold tracking-tight">Datenschutzerklärung</h1>
 
