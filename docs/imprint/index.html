@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+
+    <script>
+      (function () {
+        // Restore original SPA path after GitHub Pages 404 redirect:
+        // /?p=/privacy&q=...&h=...
+        var params = new URLSearchParams(window.location.search);
+        var p = params.get("p");
+        if (!p) return;
+    
+        var q = params.get("q");
+        var h = params.get("h");
+    
+        var targetPath = decodeURIComponent(p);
+        var targetQuery = q ? "?" + decodeURIComponent(q) : "";
+        var targetHash = h ? "#" + decodeURIComponent(h) : "";
+    
+        // Replace the current URL without reloading
+        window.history.replaceState(null, "", targetPath + targetQuery + targetHash);
+      })();
+    </script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    <meta name="author" content="SAS" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:image" content="" />
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1" />
+
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#222A39" />
+    <script type="module" crossorigin src="/assets/index-OKKawaBZ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Ch-EqdfE.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
