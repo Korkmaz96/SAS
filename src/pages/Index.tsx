@@ -12,7 +12,7 @@ const Index = () => {
     <Layout>
       <SEO
         title="Software Atelier Systems | Web- & Softwareentwicklung"
-        description="Webentwicklung und Softwarelösungen für B2B - mit Fokus auf Handwerk und Facility Management. Von der Website bis zur individuellen Anwendung."
+        description="Webseiten, Web-Apps und individuelle Software für für Handwerksbetriebe & Mittelstand. Digitale Lösungen, die Prozesse vereinfachen und Zeit sparen."
         path="/"
       />
 

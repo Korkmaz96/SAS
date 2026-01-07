@@ -54,7 +54,7 @@ export default function SoftwareSolutionsPage() {
     <Layout>
       <SEO
         title="Softwareentwicklung | Software Atelier Systems"
-        description="Individuelle Softwarelösungen für B2B: Automatisierung, Datenverarbeitung und skalierbare Anwendungen - passgenau für deine Prozesse."
+        description="Individuelle Software für Handwerksbetriebe & Mittelstand: Automatisierung, Datenverarbeitung und skalierbare Anwendungen - passend zu Ihren Prozessen und Zielen."
         path="/services/software-solutions"
       />
       {/* Hero */}
