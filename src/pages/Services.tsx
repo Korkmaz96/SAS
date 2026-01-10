@@ -56,7 +56,7 @@ export default function ServicesPage() {
     <Layout>
       <SEO
         title="Leistungen | Software Atelier Systems"
-        description="Leistungen im Überblick: Webentwicklung, individuelle Softwarelösungen und Wartung - für skalierbare, performante B2B-Systeme."
+        description="Leistungen im Überblick: Webentwicklung, Web-Apps & individuelle Business-Software - plus SEO, Wartung und Einrichtung von Instagram-/Meta-Ads für mehr Anfragen."
         path="/services"
       />
       {/* Hero */}

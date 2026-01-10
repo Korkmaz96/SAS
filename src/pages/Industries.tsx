@@ -80,7 +80,7 @@ export default function IndustriesPage() {
     <Layout>
       <SEO
         title="Branchen | Software Atelier Systems"
-        description="Branchenfokus: Handwerk und Facility Management - plus individuelle B2B-Lösungen. Klare Strukturen, performante Umsetzung und langfristige Wartbarkeit."
+        description="Branchenfokus: Handwerk & Facility Management - individuelle Business-Software, Webseiten / Web-Apps und mobile Apps. Sauber umgesetzt, performant und langfristig wartbar."
         path="/industries"
       />
       {/* Hero */}

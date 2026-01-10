@@ -33,8 +33,8 @@ export default function AboutPage() {
   return (
     <Layout>
       <SEO
-        title="Über mich | Software Atelier Systems"
-        description="Über Software Atelier Systems: Fokus auf saubere Umsetzung, Performance und langfristig wartbare Web- und Softwarelösungen für B2B."
+        title="Unternehmen | Software Atelier Systems"
+        description="Web- & App-Entwicklung aus Stuttgart: Software Atelier Systems erstellt performante, wartbare Webseiten / Web-Apps, mobile Apps und individuelle Business-Software für Betriebe und Dienstleister - inkl. SEO-Grundsetup & Support."
         path="/about"
       />
       {/* Hero */}
