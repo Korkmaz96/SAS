@@ -1,20 +1,13 @@
 {
   "name": "Software Atelier Systems",
   "short_name": "SAS",
+  "lang": "de",
   "start_url": "/",
-  "display": "standalone",
-  "background_color": "#222A39",
-  "theme_color": "#222A39",
+  "display": "browser",
+  "background_color": "#efede9",
+  "theme_color": "#efede9",
   "icons": [
-    {
-      "src": "/android-chrome-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/android-chrome-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
   ]
 }
